@@ -16,6 +16,7 @@ This page outlines our comprehensive tissue and cell type enrichment analysis pi
 
 For tissue enrichment analysis, we employ stratified linkage disequilibrium score **(sLDSC)** regression to assess whether disease heritability is enriched in regions surrounding genes with the highest specific expression or those exhibiting the strongest chromatin activity within a given tissue. See [Overview](#overview) step 1. 
 
+
 In cases where the given GWAS was significantly enriched in a tissue across at least three different profiles (defined as **Enriched tissue**, See [Overview](#overview) step 2), or when the tissue enrichment is observed with Coefficient_P_value<0.01 in two profiles, or achieves Bonferroni significance correction in one assay (defined as **Possibly enriched tissue** ), we conduct cell type enrichment analysis using scRNA-seq data from the corresponding donor tissue. This analysis is performed using our in-house developed **sclinker2** model, which significantly enhances the analytical power and reduces the false discovery rate compared to the previously released [sclink model](https://www.nature.com/articles/s41588-022-01187-9). See [Overview](#overview) step 3. 
 
 For cell type(s) with significant enrichment (defined as **Enriched celltype**, with Coefficient_P_value<0.01), we further use [MAGMA](https://cncr.nl/research/magma/) to prioritize genes which drive the heritability enrichment within the cell type identified as enriched in the previous step. The top 3 genes will be selected as the **Top_genes**. See [Overview](#overview) step 4. 
