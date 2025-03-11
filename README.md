@@ -11,7 +11,6 @@
 - [Caveats](#caveats)
 - [Contact](#contact)
 
-
 ## Description <a name="description"></a>
 This page outlines our comprehensive tissue and cell type enrichment analysis pipeline, designed to pinpoint disease-relevant tissues and cell types. This is achieved by integrating data from bulk RNA-seq, single-cell RNA-seq (scRNA-seq), epigenomic chromatin profiles, epigenomic SNP-to-gene maps, and genome-wide association study (GWAS) summary statistics. 
 
